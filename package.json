@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "data structure and algorithm course implementations in different languages using cpp, java, c or python",
+  "main": "sll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sll": "node ./singly-linked-list/sll.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4zaax/DSA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4zaax/DSA/issues"
+  },
+  "homepage": "https://github.com/4zaax/DSA#readme",
+  "dependencies": {
+    "node": "^25.1.0"
+  }
+}
