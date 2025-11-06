@@ -41,6 +41,7 @@ Node* insert_begin_sll(Node* first, int key){
     new_first->next = first;
     return new_first;
 }
+// this is also called *!prepend!*
 
 //Time Complexity: O(n)
 //Auxiliary Space: O(1) 
