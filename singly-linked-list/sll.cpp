@@ -79,6 +79,45 @@ Node* insert_by_pos(Node* head, int val, int pos){
     return head;
 
 }
+//Time Complexity: O(1)
+//Auxiliary Space: O(1) 
+Node* del_begin_dll(Node* head){
+    Node* newHead = head->next;
+    head->next = nullptr;
+    delete head;
+    return newHead;
+}
+
+//Time Complexity: O(1)
+//Auxiliary Space: O(1) 
+Node* del_end_dll(Node* head){
+    Node* current = head;
+    if (head == nullptr || head -> next == nullptr) return nullptr;
+
+    while (current->next->next != nullptr)
+        current = current->next;
+    delete current->next;
+    current->next = nullptr;
+    return head;
+}
+
+//Time Complexity: O(n)
+//Auxiliary Space: O(1)
+Node* del_pos_dll(Node* head, int pos){
+    if (pos <= 1) {
+        Node* newHead = head->next;
+        delete head;
+        return newHead;
+    }
+    Node* current = head;
+    for (int i = 1; i < pos-1; i++){
+        current = current->next;
+    }
+    Node* freeLater = current->next;
+    current->next = current->next->next;
+    delete freeLater;
+    return head;
+}
 
 //Time Complexity: O(n)
 //Auxiliary Space: O(n) 
@@ -117,7 +156,9 @@ Node* iterative_reverse_sll(Node* head){
     current -> next = prev;
     return current;
     
-}//Time Complexity: O(n)
+}
+
+//Time Complexity: O(n)
 //Auxiliary Space: O(1) 
 Node* recursive_reverse_sll(Node* head){
     if (head == NULL || head->next == NULL)
@@ -142,6 +183,6 @@ int main(){
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
-    head = iterative_reverse_sll(head);
+    head = del_pos_dll(head,1000);    
     traverse_sll(head);
 }
