@@ -14,6 +14,16 @@ def insert_begin_sll(head, key):
     newFirst.next = head
     return newFirst
 
+def insert_end_sll (head, key):
+    newNode = Node(key);
+    if (head == None):
+        return newNode
+    current = head
+    while (current.next != None):
+        current = current.next
+    current.next = newNode
+    return head
+    
 def insert_by_index(head, val, pos):
     newNode = Node(val);
     if (pos <= 1):
@@ -45,5 +55,5 @@ head.next.next = Node(30)
 head.next.next.next = Node(40)
 head.next.next.next.next = Node(10)
 head.next.next.next.next.next = Node(70)
-head = recursive_reverse_sll(head)
-head = traverse_sll(head);
+newhead = insert_end_sll(None, 150)
+traverse_sll(newhead)
