@@ -13,9 +13,13 @@
       ├── insert at end
       ├── insert at pos
       └── reverse 
-                ├── stack call reverse method
-                ├── iterative reversing method
-                └── recursively reversing method *important*
+      |         ├── stack call reverse method
+      |         ├── iterative reversing method
+      |         └── recursively reversing method *important*
+      └── delete
+      |         ├── del_begin
+      |         ├── del_end
+      |         └── del_by_pos
 
 ```
 ``` java
