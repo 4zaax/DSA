@@ -3,47 +3,49 @@
 
 ### Data structure and Algorithm(DSA) course implementations in different languages using cpp, java, c and python
 
-#### Singly Linked List
-
-```cpp
-      cpp
-      ├── traverse
-      ├── recursively traversal
-      ├── insert at front
-      ├── insert at end
-      ├── insert at pos
-      └── reverse 
-      |         ├── stack call reverse method
-      |         ├── iterative reversing method
-      |         └── recursively reversing method *important*
-      └── delete
-      |         ├── del_begin
-      |         ├── del_end
-      |         └── del_by_pos
 
 ```
-``` java
-      java
-      ├── traverse
-      ├── insert at front
-      └── insert at end
-```
-```python
-      python
-      ├── traverse
-      ├── insert at front
-      ├── 
-      ├── insert at pos
-      └── reverse 
-                ├── 
-                ├── 
-                └── recursively reversing method *important*
-```
-``` js
-      java
-      ├── traverse
-      ├── insert at front
-      └── 
+DSA
+├── .vscode/                                  (editor settings)
+├── AVL/                                      (AVL Tree implementations)
+├── BST/                                      (Binary Search Tree implementations)
+├── Heap/                                     (Heap implementations)
+├── MaxHeap/                                  (Max Heap implementations)
+├── Stack-Queue/                              (Stack + Queue implementations)
+├── Trie/                                     (Trie implementations)
+├── singly-linked-list/
+│   ├── cpp
+│   │   ├── traverse
+│   │   ├── recursively traversal
+│   │   ├── insert
+│   │   │   ├── insert at front
+│   │   │   ├── insert at end
+│   │   │   └── insert at pos
+│   │   ├── reverse
+│   │   │   ├── stack call reverse method
+│   │   │   ├── iterative reversing method
+│   │   │   └── recursively reversing method  (*important*)
+│   │   └── delete
+│   │       ├── del_begin
+│   │       ├── del_end
+│   │       └── del_by_pos
+│   ├── java
+│   │   ├── traverse
+│   │   ├── insert at front
+│   │   └── insert at end
+│   └── python
+│       ├── traverse
+│       ├── insert at front
+│       ├── insert at pos
+│       └── reverse
+│           └── recursively reversing method  (*important*)
+├── sortMethods/                              (sorting algorithms)
+├── output/                                   (saved outputs)
+├── .gitignore
+├── LICENSE                                   (MIT)
+├── README.md
+├── package.json
+└── package-lock.json
 ```
 
 
